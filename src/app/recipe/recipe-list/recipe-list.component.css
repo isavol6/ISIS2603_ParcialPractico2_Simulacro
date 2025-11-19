@@ -1,12 +1,59 @@
-img.recipe-img {
-  max-width: 250px;
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-tr:hover {
-  background-color: pink;
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  background-color: #fcd6e0; /* rosado claro tipo parcial */
+  border-radius: 10px;
+}
+
+.recipe-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recipe-ingredients {
+  text-align: left;
+  margin-top: 8px;
+}
+
+.recipe-info {
+  margin-top: 10px;
+}
+
+.btn-view {
+  margin-top: 10px;
+  background-color: #037bfc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-thead {
-  background-color: palevioletred;
+.btn-view:hover {
+  background-color: #0264cb;
 }

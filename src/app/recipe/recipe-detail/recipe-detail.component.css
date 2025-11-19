@@ -1,3 +1,36 @@
-img.recipe-detail-img {
-  max-width: 500px;
+.detail-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.detail-image {
+  width: 350px;      /* Tamaño recomendado del parcial */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.detail-info {
+  flex: 1;
+}
+
+.detail-info h2 {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.ingredient-item {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin-top: 2rem;
 }

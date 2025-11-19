@@ -1,4 +1,4 @@
-export class Ingredient {
+export class Ingredient { //esto viene acorde al json que vamos a leer externamente
   nombre: string;
   cantidad: string;
   unidad: string;
