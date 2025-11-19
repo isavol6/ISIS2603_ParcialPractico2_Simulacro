@@ -16,8 +16,11 @@
 
     <div>
       <p class="section-title">Ingredientes</p>
+
+      <!-- Punto 4: ingrediente con mayor cantidad -->
       <p><strong>Ingrediente más usado:</strong> {{ maxIngredient }}</p>
 
+      <!-- Lista de ingredientes -->
       <ul>
         <li *ngFor="let ing of recipe?.ingredientes">
           {{ ing.nombre }} - {{ ing.cantidad }} {{ ing.unidad }}
@@ -32,6 +35,7 @@
       </ol>
     </div>
 
+    <!-- Botón para regresar al listado -->
     <button class="btn btn-primary" routerLink="/recipe">Regresar</button>
   </div>
 </div>

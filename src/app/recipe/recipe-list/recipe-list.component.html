@@ -1,29 +1,33 @@
 <div class="page-title">Recetas uniandes</div>
 
 <div class="recipe-grid">
-
+  <!-- Recorremos todas las recetas que llegaron del servicio -->
   <div *ngFor="let r of recipes" class="recipe-card">
 
+    <!-- Imagen de la receta -->
     <img [src]="r.imagen" alt="{{ r.nombre }}" class="recipe-img"/>
 
+    <!-- Nombre -->
     <h3 class="recipe-name">{{ r.nombre }}</h3>
 
+    <!-- Listamos algunos ingredientes (aquí usamos los 3 primeros) -->
     <ul class="recipe-ingredients">
       <li *ngFor="let ing of r.ingredientes.slice(0,3)">
         {{ ing.nombre }}
       </li>
     </ul>
 
+    <!-- Información de porciones y número de ingredientes -->
     <div class="recipe-info">
       <strong>Porciones:</strong> {{ r.porciones }}
+      <!-- Punto 4: cantidad de ingredientes -->
       <p><strong># Ingredientes:</strong> {{ r.ingredientes.length }}</p>
-
     </div>
 
+    <!-- Botón que navega al detalle usando routerLink -->
     <button class="btn-view" [routerLink]="['/recipe', r.id]">
       Ver la receta
     </button>
 
   </div>
-
 </div>
